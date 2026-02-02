@@ -28,7 +28,8 @@ RUN apt update && apt -q -y upgrade && apt install sudo && \
     curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "/tmp/awscliv2.zip" && \
     unzip /tmp/awscliv2.zip -d /tmp/ && cd /tmp && sudo ./aws/install && cd ~ && \
     wget -q ${SCALA_URL} && tar -zxvf ${SCALA_ARCHIVE_NAME}.tgz && cp -R ${SCALA_ARCHIVE_NAME} /opt/scala && rm -R scala* && \
-    wget -q ${SBT_URL} && tar -zxvf ${SBT_ARCHIVE_NAME}.tgz && cp -R sbt /opt/sbt && rm -R sbt*
+    wget -q ${SBT_URL} && tar -zxvf ${SBT_ARCHIVE_NAME}.tgz && cp -R sbt /opt/sbt && rm -R sbt* && \
+    wget -q ${HADOOP_URL} && tar zxf ${HADOOP_ARCHIVE_NAME}.tar.gz && cp -R ${HADOOP_ARCHIVE_NAME} /opt/hadoop && rm -R hadoop*
 
 
 # Environment Variables
