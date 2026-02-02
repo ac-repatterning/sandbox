@@ -36,7 +36,7 @@ RUN apt update && apt -q -y upgrade && apt install sudo && \
 ENV SCALA_HOME  /opt/scala
 ENV SBT_HOME    /opt/sbt
 ENV SPARK_HOME  /opt/spark
-ENV PATH        $JAVA_HOME/bin:$SCALA_HOME/bin:$SBT_HOME/bin:$SPARK_HOME/bin:$SPARK_HOME/sbin:$PATH
+ENV PATH        $JAVA_HOME/bin:$SCALA_HOME/bin:$SBT_HOME/bin:$SPARK_HOME/bin:$SPARK_HOME/sbin:$HADOOP_HOME/bin:$PATH
 
 
 # If the steps of a `Dockerfile` use files that are different from the `context` file, COPY the
