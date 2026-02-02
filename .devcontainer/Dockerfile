@@ -27,6 +27,7 @@ RUN apt update && apt -q -y upgrade && apt install sudo && \
     wget -q ${SBT_URL} && tar -zxvf ${SBT_ARCHIVE_NAME}.tgz && cp -R sbt /opt/sbt && rm -R sbt*
 
 
+# Environment Variables
 ENV SCALA_HOME  /opt/scala
 ENV SBT_HOME    /opt/sbt
 ENV SPARK_HOME  /opt/spark
