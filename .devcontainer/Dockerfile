@@ -17,7 +17,7 @@ ARG SBT_URL=https://github.com/sbt/sbt/releases/download/v${SBT_VERSION}/${SBT_A
 
 ARG HADOOP_VERSION=3.4.2
 ARG HADOOP_ARCHIVE_NAME=hadoop-${HADOOP_VERSION}
-ARG HADOOP_URL=https://www.apache.org/dyn/closer.cgi/hadoop/common/hadoop-${HADOOP_VERSION}/${HADOOP_ARCHIVE_NAME}.tar.gz
+ARG HADOOP_URL=https://dlcdn.apache.org/hadoop/common/hadoop-${HADOOP_VERSION}/${HADOOP_ARCHIVE_NAME}.tar.gz
 
 
 # Setting-up
