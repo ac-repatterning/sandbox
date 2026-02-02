@@ -15,6 +15,10 @@ ARG SBT_VERSION=1.12.1
 ARG SBT_ARCHIVE_NAME=sbt-$SBT_VERSION
 ARG SBT_URL=https://github.com/sbt/sbt/releases/download/v${SBT_VERSION}/${SBT_ARCHIVE_NAME}.tgz
 
+ARG HADOOP_VERSION=3.4.2
+ARG HADOOP_ARCHIVE_NAME=hadoop-${HADOOP_VERSION}
+ARG HADOOP_URL=https://www.apache.org/dyn/closer.cgi/hadoop/common/hadoop-${HADOOP_VERSION}/${HADOOP_ARCHIVE_NAME}.tar.gz
+
 
 # Setting-up
 RUN apt update && apt -q -y upgrade && apt install sudo && \
