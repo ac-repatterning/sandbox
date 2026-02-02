@@ -8,6 +8,9 @@ hs_err_pid*
 .bash_history
 .scala_history
 
-# Temporary Action
-SandboxApp.*
+# integrated development environment
+.idea
+.bsp
 
+# Temporary Settings
+SandboxApp.*
