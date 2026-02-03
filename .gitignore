@@ -11,6 +11,8 @@ hs_err_pid*
 # integrated development environment
 .idea
 .bsp
+project/project/
+project/target/
 
 # Temporary Settings
 SandboxApp.*
