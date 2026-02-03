@@ -11,6 +11,8 @@ hs_err_pid*
 # integrated development environment
 .idea
 .bsp
+.ivy2
+.sbt
 project/project/
 project/target/
 
